@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/{country?}/search', [HomeController::class, 'show'])->name('country.show');
+Route::get('/{country?}/offers', [HomeController::class, 'offers'])->name('offers');
+Route::get('/{country?}/offers/{offer?}', [HomeController::class, 'offer'])->name('offers.show');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

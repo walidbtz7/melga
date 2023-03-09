@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 html {
     height: 100%;
 }
@@ -65,8 +64,9 @@ body {
 .logo-home-tr h1 {
     font-family: 'Baloo Paaji 2', cursive;
     font-size: 20px;
-    color: #656565;
+    color: #0e1d57;
     margin-top: 15px;
+    text-transform: uppercase;
 }
 
 .home-search-tr {
@@ -413,9 +413,9 @@ body {
     border-color: #ced4da;
 }
 
-.btn-primary {
-    background: #F78B5B;
-    border-color: #F78B5B;
+.btn-blue {
+    background: #4eb4e9 m !important;
+    border-color: #4eb4e9 m !important;
     transition: all linear 0.2s;
     color: #fff !important;
     text-decoration: none !important;
@@ -536,13 +536,13 @@ body {
 }
 
 .select-country-tr {
-    border: 1px solid #F0F0F0;
     padding: 20px 30px;
 }
 
 .select-country-tr a {
     color: #000;
     padding: 8px 0px;
+    text-decoration: none;
 }
 
 .sim-jobs-tr {
@@ -2523,8 +2523,8 @@ a.ui-button:active,
     height: 60px;
     font-size: 18px;
 }
-ƒ
-.cv-tr .modal-footer .btn {
+
+ƒ .cv-tr .modal-footer .btn {
     width: 170px;
 }
 
@@ -3532,107 +3532,122 @@ a.ui-button:active,
     line-height: 35px;
 }
 
-btn-rounded{
-    border-radius:40px;
+btn-rounded {
+    border-radius: 40px;
 }
+
 .sal-widget {
-    padding:20px;
+    padding: 20px;
 }
-.sal-widget .btn-outline-secondary{
-    color:#333;
+
+.sal-widget .btn-outline-secondary {
+    color: #333;
 }
-.sal-widget .btn-outline-secondary:hover{
-    color:#fff;
+
+.sal-widget .btn-outline-secondary:hover {
+    color: #fff;
 }
-.sal-widget .nav-pills .nav-link{
-    color:#333;
-    font-size:14px;
-    transition:all linear 0.2s;
-    border-radius:40px;
+
+.sal-widget .nav-pills .nav-link {
+    color: #333;
+    font-size: 14px;
+    transition: all linear 0.2s;
+    border-radius: 40px;
     background: transparent;
     outline: 0;
-    width:100%;
+    width: 100%;
 }
-.sal-widget .nav-pills .nav-link:hover{
-     color:#F78B5B;
+
+.sal-widget .nav-pills .nav-link:hover {
+    color: #F78B5B;
 }
-.sal-widget .nav-pills .nav-link.active{
+
+.sal-widget .nav-pills .nav-link.active {
     border-radius: 40px;
-    background:#FFEEE6;
-    font-weight:600;
-    color:#333;
+    background: #FFEEE6;
+    font-weight: 600;
+    color: #333;
+}
 
+.sal-widget h4 {
+    font-size: 18px;
 }
-.sal-widget h4{
-    font-size:18px;
+
+.sal-widget .sal-info span {
+    font-size: 24px;
+    font-weight: 600;
 }
-.sal-widget .sal-info span{
-    font-size:24px;
-    font-weight:600;
+
+.sal-widget .sal-info span span {
+    font-size: 18px;
+    font-weight: 400;
 }
-.sal-widget .sal-info span span{
-    font-size:18px;
-    font-weight:400;
+
+.sal-widget .sal-info .text-muted {
+    font-size: 14px;
 }
-.sal-widget .sal-info .text-muted{
-    font-size:14px;
-}
+
 .sal-widget .sal-img .img-an {
-    overflow:hidden;
+    overflow: hidden;
 }
-.sal-widget .sal-img img{
-    max-width: 332.67px;
-     -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-      -webkit-animation-name: slideInUp;
-          animation-name: slideInUp;
-}
-.sal-widget .sal-img p{
-    font-size:14px;
-}
-.sal-widget .sal-img .sal-med{
-    margin-left:70px;
-}
-.sal-widget .sal-rel a{
-    color:#333;
-    font-size:14px;
-    padding:8px 0px;
-}
-.sal-widget .sal-rel a:hover{
-    background:#FAFAFA;
-}
-.sal-widget .sal-rel a div{
-    width:70%;
-    text-overflow:ellipsis;
-    white-space: nowrap;
-    overflow:hidden;
-}
-@-webkit-keyframes slideInUp {
-  0% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    visibility: visible;
-  }
 
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+.sal-widget .sal-img img {
+    max-width: 332.67px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+}
+
+.sal-widget .sal-img p {
+    font-size: 14px;
+}
+
+.sal-widget .sal-img .sal-med {
+    margin-left: 70px;
+}
+
+.sal-widget .sal-rel a {
+    color: #333;
+    font-size: 14px;
+    padding: 8px 0px;
+}
+
+.sal-widget .sal-rel a:hover {
+    background: #FAFAFA;
+}
+
+.sal-widget .sal-rel a div {
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@-webkit-keyframes slideInUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideInUp {
-  0% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    visibility: visible;
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 *,
@@ -4326,62 +4341,49 @@ video {
         --tw-bg-opacity: 1;
         background-color: rgb(17 24 39 / var(--tw-bg-opacity))
     }
-
     .dark\:bg-gray-800\/50 {
         background-color: rgb(31 41 55 / 0.5)
     }
-
     .dark\:bg-red-800\/20 {
         background-color: rgb(153 27 27 / 0.2)
     }
-
     .dark\:bg-dots-lighter {
         background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E")
     }
-
     .dark\:bg-gradient-to-bl {
         background-image: linear-gradient(to bottom left, var(--tw-gradient-stops))
     }
-
     .dark\:stroke-gray-600 {
         stroke: #4b5563
     }
-
     .dark\:text-gray-400 {
         --tw-text-opacity: 1;
         color: rgb(156 163 175 / var(--tw-text-opacity))
     }
-
     .dark\:text-white {
         --tw-text-opacity: 1;
         color: rgb(255 255 255 / var(--tw-text-opacity))
     }
-
     .dark\:shadow-none {
         --tw-shadow: 0 0 #0000;
         --tw-shadow-colored: 0 0 #0000;
         box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
     }
-
     .dark\:ring-1 {
         --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
         --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
         box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
     }
-
     .dark\:ring-inset {
         --tw-ring-inset: inset
     }
-
     .dark\:ring-white\/5 {
         --tw-ring-color: rgb(255 255 255 / 0.05)
     }
-
     .dark\:hover\:text-white:hover {
         --tw-text-opacity: 1;
         color: rgb(255 255 255 / var(--tw-text-opacity))
     }
-
     .group:hover .dark\:group-hover\:stroke-gray-400 {
         stroke: #9ca3af
     }
@@ -4391,39 +4393,30 @@ video {
     .sm\:fixed {
         position: fixed
     }
-
     .sm\:top-0 {
         top: 0px
     }
-
     .sm\:right-0 {
         right: 0px
     }
-
     .sm\:ml-0 {
         margin-left: 0px
     }
-
     .sm\:flex {
         display: flex
     }
-
     .sm\:items-center {
         align-items: center
     }
-
     .sm\:justify-center {
         justify-content: center
     }
-
     .sm\:justify-between {
         justify-content: space-between
     }
-
     .sm\:text-left {
         text-align: left
     }
-
     .sm\:text-right {
         text-align: right
     }
@@ -4439,7 +4432,6 @@ video {
     .lg\:gap-8 {
         gap: 2rem
     }
-
     .lg\:p-8 {
         padding: 2rem
     }
