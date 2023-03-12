@@ -15,13 +15,13 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                     Dashbaord
                     </x-nav-link>
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('offers')" :active="request()->routeIs('offers')">
                         Offres
                     </x-nav-link>
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('trafic')" :active="request()->routeIs('trafic')">
                         Trafic
                     </x-nav-link>
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('countries')" :active="request()->routeIs('countries')">
                        Countries
                     </x-nav-link>
                 </div>
@@ -77,21 +77,17 @@
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
-            </x-responsive-nav-link>
-
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 Dashbaord
-            </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('offers')" :active="request()->routeIs('offers')">
                     Offres
-            </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('trafic')" :active="request()->routeIs('trafic')">
                     Trafic
-            </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                    Countries
-            </x-responsive-nav-link>
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('countries')" :active="request()->routeIs('countries')">
+                   Countries
+                </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
